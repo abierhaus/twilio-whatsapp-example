@@ -5,4 +5,8 @@
     <RootNamespace>twilio_whatsapp_example</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Twilio" Version="5.54.0" />
+  </ItemGroup>
+
 </Project>

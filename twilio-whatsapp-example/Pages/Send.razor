@@ -1,0 +1,17 @@
+﻿@page "/send"
+
+<h1>Send WhatsApp</h1>
+
+
+@if (!string.IsNullOrEmpty(Message))
+{
+
+    <p><strong>@Message</strong></p>
+}
+
+To: <input @bind="To"  />
+
+Message: <input @bind="Content" />
+
+
+<button class="btn btn-primary" @onclick="SendWhatsAppAsync">Send</button>
