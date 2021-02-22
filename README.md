@@ -26,4 +26,4 @@ For receicing replies we need to configure the Twilio webhook. Note: It is neces
 
 
 ## Remarks
-The demo makes use of https://www.litedb.org/ to demonstrate how to store data. When you are using the code in your environmennt you might replace it with your database provider.
+The demo makes use of https://www.litedb.org/ to simple store the received WhatsApp. When you are using the code in your environmennt you might replace it with your database provider.
