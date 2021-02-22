@@ -1,3 +1,29 @@
 ﻿@page "/receive"
 
-<h1>Counter</h1>
+<h1>Incoming message</h1>
+@if (Messages == null)
+{
+<p><em>Loading...</em></p>
+}
+else
+{
+<table class="table">
+    <thead>
+    <tr>
+        <th>From</th>
+        <th>Body</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var message in Messages)
+    {
+        <tr>
+            <td>@message.From</td>
+            <td>@message.Body</td>
+
+        </tr>
+    }
+    </tbody>
+</table>
+}

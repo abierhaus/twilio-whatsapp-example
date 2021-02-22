@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using twilio_whatsapp_example.Data;
 
+
 namespace twilio_whatsapp_example
 {
     public class Startup
@@ -28,7 +29,10 @@ namespace twilio_whatsapp_example
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+
             services.AddSingleton<TwilioService>();
+            services.AddSingleton<IMessageService, MessageService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,7 +58,15 @@ namespace twilio_whatsapp_example
             {
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
+
+                //Register WhatsApp Receivre controller here
+                endpoints.MapControllerRoute(
+                    name: "WhatsAppReceiver",
+                    pattern: "{controller=WhatsAppReceiver}/{action=Index}/{id?}");
             });
+
+    
+
         }
     }
 }

@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.10" />
     <PackageReference Include="Twilio" Version="5.54.0" />
+    <PackageReference Include="Twilio.AspNet.Common" Version="5.37.2" />
+    <PackageReference Include="Twilio.AspNet.Core" Version="5.37.2" />
   </ItemGroup>
 
 </Project>
