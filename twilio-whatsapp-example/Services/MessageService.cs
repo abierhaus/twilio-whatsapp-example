@@ -5,10 +5,15 @@ using twilio_whatsapp_example.Models;
 
 namespace twilio_whatsapp_example.Data
 {
+
+    /// <summary>
+    /// Service for storing messages. For demonstration purpose we use LiteDB here.
+    /// By implementing IMessageService you can use your own service/ repository
+    /// </summary>
     public class MessageService : IMessageService
     {
         /// <summary>
-        /// Path to the local database. Will run local and on azure (AWS not tested)
+        /// Path to the local database
         /// </summary>
         public const string DatabasePath = "TwilioWhatsAppExample.db";
 
