@@ -6,6 +6,8 @@ The goal is to provide a very easy quick-start application to send and receive W
 
 We use the Twilio MessageResource API to send WhatsApp Messages. For receicing WhatsApp we use the sugessted Twilio WebHook approach
 
+Find the complete article here: https://alexbierhaus.medium.com/twilio-api-whatsapp-net-blazor-example-f7d226da5367
+
 
 <img alt="chrome_2021-02-22_13-04-52" src="https://user-images.githubusercontent.com/18400458/108706288-adc08780-750e-11eb-9124-71a371bea44e.png">
 
