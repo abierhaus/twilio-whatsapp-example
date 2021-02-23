@@ -27,7 +27,7 @@ namespace twilio_whatsapp_example.Data
             try
             {
                 // Find your Account Sid and Token at twilio.com/console
-                // and set the environment variables. See http://twil.io/secure
+                // and set the confif. See http://twil.io/secure
                 string accountSid = ConfigRoot.GetSection("Twilio")["TWILIO_ACCOUNT_SID"];
                 string authToken = ConfigRoot.GetSection("Twilio")["TWILIO_AUTH_TOKEN"];
 
