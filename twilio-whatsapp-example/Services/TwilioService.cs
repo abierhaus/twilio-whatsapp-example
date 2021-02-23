@@ -8,7 +8,7 @@ namespace twilio_whatsapp_example.Data
 {
     public class TwilioService 
     {
-        private IConfigurationRoot ConfigRoot;
+        private readonly IConfigurationRoot ConfigRoot;
 
         public TwilioService(IConfiguration configRoot)
         {
@@ -48,7 +48,6 @@ namespace twilio_whatsapp_example.Data
                 Console.WriteLine(e);
                 throw;
             }
-
         
         }
     }

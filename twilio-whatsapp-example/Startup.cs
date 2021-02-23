@@ -59,7 +59,7 @@ namespace twilio_whatsapp_example
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
 
-                //Register WhatsApp Receivre controller here
+                //Register WhatsApp Receiver controller here
                 endpoints.MapControllerRoute(
                     name: "WhatsAppReceiver",
                     pattern: "{controller=WhatsAppReceiver}/{action=Index}/{id?}");

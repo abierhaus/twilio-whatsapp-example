@@ -1,6 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
+
 using Twilio.AspNet.Common;
 using Twilio.AspNet.Core;
 using Twilio.TwiML;
@@ -43,7 +42,7 @@ namespace twilio_whatsapp_example
 
             //Just return a message in order to proof if the test was OK
             var messagingResponse = new MessagingResponse();
-            messagingResponse.Message("Thank you, we received your message");
+            messagingResponse.Message("Thank you, we received your message: " + incomingMessage.Body);
 
 
             return TwiML(messagingResponse);
