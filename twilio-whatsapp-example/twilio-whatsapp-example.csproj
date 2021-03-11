@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>twilio_whatsapp_example</RootNamespace>
+    <UserSecretsId>f389b74f-4c9d-40e8-89b1-855fefdc32b0</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
